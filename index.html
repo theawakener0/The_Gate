@@ -1,113 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
+<<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Hackers</title>
+    <title>The Hackers | Innovative Technology Solutions</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/0ce963a9b8.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Modern Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
 
+        .hero-section {
+            background: var(--gradient);
+            padding: 6rem 0;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-icon:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
-<body>
+<body class="bg-dark text-light">
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">The Hackers</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🚀 The Hackers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="Commpetition.html">Commpetition</a>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">about</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="help.html">help</a>
-                </li>
-            </ul>
-
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Competition.html">Competition</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help</a>
+                    </li>
+                </ul>
             </div>
+        </div>
     </nav>
 
-
-    <center><b><h1>The Hackers</h1></b></center>
-
-    <br>
-    <br>
-    <center>
-        <div>
-            <img class="Personal" src="Personal.png">
-            <img class="Omar" src="Omar Ashraf.png">
-        </div>    
-    </center>
-
-    <br>
-
-    <center>
-        <b><h1>Programming Langauges</h1></b>
-    </center>
-
-    <center>
-        <div>
-        <img src="icons/C.png">
-        <img src="icons/Cpp.png">
-        <img src="icons/Javascript.png">
-        <img src="icons/python.png">
-        <img src="icons/SQLite.png">
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Innovating Tomorrow's Solutions Today</h1>
+            <div class="d-flex justify-content-center gap-4">
+                <img src="Personal.png" alt="Ahmed Khaled" class="profile-image rounded-circle">
+                <img src="Omar Ashraf.png" alt="Omar Ashraf" class="profile-image rounded-circle">
+            </div>
         </div>
-    </center>
+    </header>
 
-    <br>
-    <br>
-    <br>
+    <main class="container my-5">
+        <!-- Tech Stack Section -->
+        <section class="my-5 py-5 text-center">
+            <h2 class="display-5 mb-5">Core Technologies</h2>
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <img src="icons/C.png" alt="C Language" class="feature-icon">
+                <img src="icons/Cpp.png" alt="C++" class="feature-icon">
+                <img src="icons/Javascript.png" alt="JavaScript" class="feature-icon">
+                <img src="icons/python.png" alt="Python" class="feature-icon">
+                <img src="icons/SQLite.png" alt="SQLite" class="feature-icon">
+            </div>
+        </section>
 
-    <center>
-        <h1><b>Ahmed Khaled & Omar Ashraf</b></h1>
-        <br>
-        <b><p>Ahmed Khaled & Omar Ashraf: Young Innovators Bridging Technology, Humanities, and Social Impact</p></b>
-        <p>Ahmed Khaled and Omar Ashraf are two dynamic young visionaries who, despite their tender ages, are already making significant strides in technology, education, and community development. Their complementary skills and passions uniquely position them as pioneers ready to shape a brighter future.</p>
-        <br>
-        <b><p>Ahmed Khaled</p></b>
-        <p>A 15-year-old technology enthusiast with a keen interest in cybersecurity, artificial intelligence, and philosophy, Ahmed Khaled has shown remarkable initiative in his academic and creative endeavors. His journey began with immersive experiences in computer science—completing courses like Harvard’s CS50 and earning certifications such as Cisco’s CCST. Ahmed has successfully developed a range of projects, including innovative Python utilities and MasteryAI, an AI voice agent designed to provide strategic advice, philosophical insights, and psychological guidance. Deeply inspired by classical Islamic scholars like Ibn Taymiyyah and Ibn al-Qayyim, Ahmed’s work reflects his belief in transcending human limitations through the harmonious integration of technology, deep thought, and faith. Beyond his technical projects, he is also committed to education, developing a summer programming course at his school and envisioning a reformist movement aimed at empowering his peers—an initiative he calls "The Lost Generation." With aspirations to study abroad at prestigious institutions such as Harvard, Ahmed Khaled is steadily carving a path toward becoming a future leader in AI, cybersecurity, and educational innovation.</p>
-        <br>
-        <b><p>Omar Ashraf</p></b>
-        <p>At 14, Omar Ashraf brings an equally impressive blend of technical expertise and a passion for the humanities. With a strong foundation in social studies and English, Omar is dedicated to understanding and engaging with the world around him, which complements his fervor for technological innovation. Specializing in robotics and PCB design—mastering tools like KiCad—Omar is currently spearheading an innovative robotics project aimed at empowering the visually impaired. His project integrates an ARM processor to monitor vital health metrics such as blood pressure, blood sugar levels, and heart rate, while also incorporating advanced features like blood and oxygen diagnostics, navigation assistance, image recognition, and Arabic voice interaction for enhanced accessibility. This initiative not only highlights his technical skills but also his commitment to creating technology that serves real-world needs and improves lives.</p>
-        <br>
-        <b><p>Ahmed Khaled & Omar Ashraf </p></b>
-        <p>Ahmed Khaled and Omar Ashraf exemplify the spirit of multidisciplinary innovation. While Ahmed’s work in AI, cybersecurity, and philosophical inquiry paves the way for groundbreaking approaches to technology and education, Omar’s hands-on projects in robotics and accessible design address pressing social challenges head-on. Their collective efforts underscore a shared vision: to leverage technology and education to empower communities, foster inclusive innovation, and inspire future generations.</p>
-        <p>As they continue to push boundaries in both technology and the humanities, Ahmed Khaled and Omar Ashraf are not only shaping their own futures but also laying the groundwork for a more interconnected, thoughtful, and impactful world.</p>
-    </center>
-    
-    <br>
-    <br>
-    <br>
+        <!-- Bio Section -->
+        <section class="my-5 py-5">
+            <h2 class="display-5 text-center mb-5">About the Innovators</h2>
+            
+            <article class="card bg-dark border-light mb-4">
+                <div class="card-body">
+                    <h3 class="card-title h4">Ahmed Khaled & Omar Ashraf</h3>
+                    <p class="lead">Young Visionaries in Technology & Social Impact</p>
+                    <p class="card-text">Ahmed Khaled (15) and Omar Ashraf (14) are redefining innovation through their multidisciplinary approach combining cutting-edge technology with deep social awareness...</p>
+                </div>
+            </article>
 
-    
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 bg-dark border-light">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Ahmed Khaled</h3>
+                            <p class="card-text">Cybersecurity enthusiast and AI developer with a passion for philosophical inquiry...</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-certificate me-2"></i>Harvard CS50 Alumni</li>
+                                <li><i class="fas fa-brain me-2"></i>MasteryAI Developer</li>
+                                <li><i class="fas fa-book me-2"></i>Educational Innovator</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 bg-dark border-light">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Omar Ashraf</h3>
+                            <p class="card-text">Robotics specialist focused on accessible healthcare technology...</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-robot me-2"></i>Assistive Robotics</li>
+                                <li><i class="fas fa-heartbeat me-2"></i>Health Monitoring Systems</li>
+                                <li><i class="fas fa-universal-access me-2"></i>Accessibility Advocate</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 The Hackers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-<style>
-    body{
-        background-color: #212121;
-        color: white;
-    }
-</style>
-
 </html>
